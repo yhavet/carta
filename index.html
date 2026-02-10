@@ -3,34 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para Ti</title>
+    <title>Para Ti ❤️</title>
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="container">
-      <h1>Para ti ❤️</h1>
+        <h1>Para ti ❤️</h1>
     </div>
-    
-    <div class="letter_ct">
-      <input type="checkbox" id="check" />
-      <label for="check">
-        <span class="letter main"></span>
+
+    <div class="envelope-wrapper" onclick="openEnvelope()">
+        <div class="envelope">
+            <div class="front"></div>
+            <div class="flap"></div>
+            <div class="heart-seal"></div>
+            <div class="letter-preview"></div>
+        </div>
+    </div>
+
+    <div class="hint">
+        <h3>Toca el sobre <3</h3>
+    </div>
+
+    <div class="overlay" id="photo-overlay" onclick="closeEnvelope()">
         
-        <div class="note">
-            <img src="foto.png" class="mi-foto" alt="Nuestro recuerdo">
+        <div class="hearts-container" id="hearts-container"></div>
+
+        <div class="card-polaroid">
+            <div class="photo-frame">
+                <img src="foto.png" class="photo-img" alt="Nosotros">
+            </div>
+            <div class="polaroid-text">Te Amo</div>
         </div>
         
-        <span class="front"></span>
-        <span class="letter flap-bg"></span>
-        <span class="letter flap"></span>
-        <span class="heart"></span>
-      </label>
+        <div class="close-hint">(Toca cualquier parte para cerrar)</div>
     </div>
-    
-    <div class="txt">
-      <h3>Toca la carta <3</h3>
-    </div>
-  
+
+    <script src="index.js"></script>
+
 </body>
 </html>
